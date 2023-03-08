@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Interactive card details form</title>
+
+
+</head>
+
+<body>
+
+  <div class="parent_container">
+
+    <div class="left_container">
+      <div class="card_frontside">
+
+        <img class="card_logotype" src="./images/card-logo.svg" alt="">
+        <p class="card_number"> 0000 0000 0000 0000</p>
+        <div class="card_pers_details">
+          <p class="card_name">Jane Appleseed</p>
+          <p class="card_date"> <span class="card_date_month">00</span> / <span class="card_date_year">00</span></p>
+        </div>
+
+      </div>
+      <div class="card_backside">
+        <p class="card_cvc">000</p>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="right_container">
+      <form>
+        
+      
+          <label for="">Cardholder name</label>
+         
+          <input class="input_name" type="text" placeholder="e.g. Jane Appleseed" required> 
+        
+   
+
+
+          <label for="">Card number </label> 
+          <input class="input_number"  type="number" placeholder="e.g. 1234 5678 9123 0000" required>
+      
+
+        <div class="input_details">
+
+
+          <div class="flex_cont">
+            <label for="">Exp.date(mm/yy)</label>
+            <div class="input_month_year">
+              <input class="input_date_month" type="number"  placeholder="MM" required>
+              <input class="input_date_year" type="number" placeholder="YY" required>
+
+            </div>
+          </div>
+
+
+          <div class="flex_cont">
+            <label for="">CVC</label>
+            <div class="cvc_container">
+              <input class="input_cvc" type="number"  placeholder="e.g. 123" required>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+        <input class="btn" type="submit" value="confirm">
+      </form>
+    </div>
+
+
+
+
+
+    <div class="thank_window">
+      <h1>Thank you</h1>
+      <p>We've added your card details</p>
+      <input class="btn_continue" type="submit" value="Continue">
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
